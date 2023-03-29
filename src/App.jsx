@@ -9,10 +9,29 @@ function App() {
 
   return (
     <div >
-      <PokemonCard />
+      <PokemonCard pokemon={pokemonList[1]} />
+
 
     </div>
+
+
   )
 }
+
+const pokemonList = [
+  {
+    name: "bulbasaur",
+    imgSrc:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+  },
+  {
+    name: "mew",
+    imgSrc: "src/assets/151.png"
+  },
+  {
+    name: "charizard"
+
+  },
+];
 
 export default App
