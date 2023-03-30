@@ -4,16 +4,16 @@
 
 
 function PokemonCard(props) {
+    console.log(props)
 
-    let pokemon = props.pokemon;
+    let condition = props.pokemonList[props.pokemonIndex].imgSrc ? <img src={props.pokemonList[props.pokemonIndex].imgSrc} /> : <p>???</p>;
 
-
-    let condition = pokemon.imgSrc ? <img src={pokemon.imgSrc} /> : <p>???</p>;
     return (
 
         <figure >
             {condition}
-            <figCaption>{pokemon.name}</figCaption>
+            <figcaption>{props.pokemonList[props.pokemonIndex].name}</figcaption>
+
         </figure>
 
 
@@ -21,16 +21,6 @@ function PokemonCard(props) {
 
     )
 }
-
-PokemonCard.propTypes = {
-    pokemon: PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        imgSrc: PropTypes.string,
-    })
-}
-
-
-
 
 
 
