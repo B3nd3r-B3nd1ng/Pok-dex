@@ -7,13 +7,13 @@ import PokemonCard from './components/PokemonCard.jsx'
 
 function App() {
 
-  const [pokemonIndex, setPokemonIndex] = useState(0);
+  const [pokemonIndex, setpokemonIndex] = useState(0);
 
-  const Nextpokemon = () => {
-    setPokemonIndex((pokemonIndex) => pokemonIndex + 1);
+  const NextPokemon = () => {
+    setpokemonIndex((pokemonIndex) => pokemonIndex + 1);
   }
   const previousPokemon = () => {
-    setPokemonIndex((pokemonIndex) => pokemonIndex - 1)
+    setpokemonIndex((pokemonIndex) => pokemonIndex - 1)
   };
   return (
     <div >
@@ -22,7 +22,7 @@ function App() {
       <p>{pokemonIndex}</p>
       <button onClick={previousPokemon}>précédent</button>
 
-      <button onClick={Nextpokemon}>suivant</button>
+      <button onClick={NextPokemon}>suivant</button>
 
     </div>
 
