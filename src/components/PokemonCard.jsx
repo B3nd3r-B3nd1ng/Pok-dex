@@ -10,15 +10,11 @@ function PokemonCard(props) {
 
     return (
 
-        <figure >
+        <figure className="bulbasaur" >
             {condition}
-            <figcaption>{props.pokemonList[props.pokemonIndex].name}</figcaption>
+            <figcaption className="bulbasaurId">{props.pokemonList[props.pokemonIndex].name}</figcaption>
 
         </figure>
-
-
-
-
     )
 }
 
@@ -28,5 +24,6 @@ function PokemonCard(props) {
 
 
 
-export default PokemonCard;
+
+export default PokemonCard
 

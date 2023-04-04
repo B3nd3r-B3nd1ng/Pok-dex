@@ -1,0 +1,41 @@
+.bulbasaur {
+
+    border: 6px solid darkgray;
+    background-color: slategrey;
+    border-radius: 10%;
+
+
+}
+
+.bulbasaurId {
+
+
+    box-shadow: -2px 1px 8px 1px black;
+    background-color: slategray;
+    border-radius: 20px;
+    width: 50vw;
+    height: 10vh;
+    font-size: 50px;
+    color: lightgoldenrodyellow;
+    margin: 1rem;
+}
+
+.button {
+
+    border-radius: 10px;
+    width: 20vw;
+    height: 10vh;
+    margin: 1rem;
+    font-size: 30px;
+    color: lightgoldenrodyellow;
+
+
+}
+
+.button:hover {
+
+    border: 3px solid lightgoldenrodyellow;
+    background-color: darkslategray;
+
+
+}
